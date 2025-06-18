@@ -1,13 +1,13 @@
 {
   "manifest_version": 3,
-  "name": "Kayoosh New Tab Browser",
-  "version": "1.1",
-  "description": "Replaces new tab with embedded Kayoosh browser.",
+  "name": "Custom New Tab",
+  "description": "Заменяет стандартную новую вкладку на встроенный сайт.",
+  "version": "1.0",
   "chrome_url_overrides": {
     "newtab": "newtab.html"
   },
-  "host_permissions": [
-    "https://kayoosh2009.github.io/*"
-  ],
-  "permissions": []
+  "permissions": [],
+  "icons": {
+    "128": "icon.png"
+  }
 }
