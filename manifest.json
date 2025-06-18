@@ -1,12 +1,15 @@
 {
   "manifest_version": 3,
-  "name": "Custom New Tab",
-  "description": "Заменяет стандартную новую вкладку на встроенный сайт.",
+  "name": "Force Custom New Tab",
   "version": "1.0",
-  "chrome_url_overrides": {
-    "newtab": "newtab.html"
+  "description": "Автоматически перенаправляет новую вкладку на нужный сайт.",
+  "permissions": ["tabs"],
+  "background": {
+    "service_worker": "background.js"
   },
-  "permissions": [],
+  "action": {
+    "default_title": "Custom New Tab"
+  },
   "icons": {
     "128": "icon.png"
   }
